@@ -1,5 +1,4 @@
 $primary-color: #6c5ce7;
-$text-color: #1a0a3b;
 
 @mixin size($width, $height: $width) {
   width: $width;
@@ -18,6 +17,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  line-height: 1;
 }
 img {
   display: block;
@@ -96,14 +96,12 @@ ul {
     no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  // -webkit-clip-path: ellipse(37% 32% at 49% 50%);
-  // clip-path: ellipse(60% 60% at 50% 33%);
   height: 100vh;
   color: #fff;
   min-height: 50rem;
   font-family: 'Ubuntu', sans-serif;
   .max-width {
-    float: flex;
+    display: flex;
     width: 100%;
   }
   &-btn {
@@ -483,10 +481,14 @@ section {
   }
   &-subname {
     color: #333;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &-fields {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 1.5rem;
   }
   &-field,
@@ -662,6 +664,14 @@ button {
   .skills-left,
   .skills-right {
     width: 100%;
+  }
+  .contact-fields {
+    height: auto;
+    margin: 0;
+  }
+  .contact-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 500px) {

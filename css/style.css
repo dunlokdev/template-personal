@@ -12,6 +12,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  line-height: 1;
 }
 
 img {
@@ -97,7 +98,7 @@ ul {
   font-family: "Ubuntu", sans-serif;
 }
 .home .max-width {
-  float: flex;
+  display: flex;
   width: 100%;
 }
 .home-btn {
@@ -475,9 +476,13 @@ section {
 .contact-subname {
   color: #333;
 }
+.contact-subname:hover {
+  text-decoration: underline;
+}
 .contact-fields {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
 .contact-field, .contact-fields {
@@ -671,6 +676,16 @@ button:hover {
   .skills-left,
 .skills-right {
     width: 100%;
+  }
+
+  .contact-fields {
+    height: auto;
+    margin: 0;
+  }
+
+  .contact-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 500px) {
