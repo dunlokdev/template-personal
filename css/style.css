@@ -502,6 +502,9 @@ section {
   font-family: "Poppins", sans-serif;
   font-size: 1.7rem;
 }
+.contact-field input:focus {
+  border-color: #6c5ce7;
+}
 .contact-btn {
   margin-top: 1.5rem;
   width: 17rem;
@@ -522,6 +525,9 @@ textarea {
   outline: none;
   font-family: "Poppins", sans-serif;
   font-size: 1.7rem;
+}
+textarea:focus {
+  border-color: #6c5ce7;
 }
 
 button {

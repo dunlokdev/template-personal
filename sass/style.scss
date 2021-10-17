@@ -506,6 +506,9 @@ section {
       outline: none;
       font-family: 'Poppins', sans-serif;
       font-size: 1.7rem;
+      &:focus {
+        border-color: $primary-color;
+      }
     }
   }
   &-btn {
@@ -525,6 +528,9 @@ textarea {
   outline: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1.7rem;
+  &:focus {
+    border-color: $primary-color;
+  }
 }
 button {
   @include size(100%);
