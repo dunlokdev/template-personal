@@ -1,18 +1,22 @@
+// variable
 $primary-color: #6c5ce7;
 
+// mixin
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
 }
 
-// Reset CSS
-* {
+// reset CSS
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px = 1rem
   scroll-behavior: smooth;
 }
 body {
@@ -29,14 +33,15 @@ a {
 ul {
   list-style: none;
 }
-
+// container web
 .max-width {
   max-width: 130rem;
   padding: 0 8rem;
   margin: auto;
 }
 
-// Navbar
+// header styling
+// navbar
 .navbar {
   position: fixed;
   z-index: 999;
@@ -88,7 +93,7 @@ ul {
     color: #fff;
   }
 }
-// Home
+// home styling
 .home {
   display: flex;
   background: linear-gradient(to right, rgba(108, 92, 231, 0.8), rgba(72, 126, 176, 0.5)),
@@ -548,7 +553,7 @@ button {
   }
 }
 
-// Footer
+// footer
 .footer {
   background-color: #111;
   padding: 2rem 2.3rem;
@@ -563,7 +568,7 @@ button {
     }
   }
 }
-// Responsive
+// responsive
 @media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0px;
